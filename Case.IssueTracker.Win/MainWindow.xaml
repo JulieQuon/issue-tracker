@@ -1,0 +1,11 @@
+﻿<Window x:Class="Case.IssueTracker.Win.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ctr="clr-namespace:Case.IssueTracker.UserControls;assembly=Case.IssueTracker"
+        Title="Issue Tracker" Width="800" Height="500"  Name="mainWin"
+         Closing="Window_Closing" Icon="icon.ico" >
+    <Grid >
+        <ctr:MainPanel x:Name="mainPan" />
+        
+    </Grid>
+</Window>

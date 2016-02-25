@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1B969AD1-C7E6-40FB-B3B0-20E7EB735876}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Case.IssueTracker</RootNamespace>
+    <AssemblyName>Case.IssueTracker</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+    <!--<SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>-->
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ManualObfuscation|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ManualObfuscation\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug-2014|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug-2014\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug-2015|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug-2015\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug-2016|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug-2016\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-2014|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release-2014\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-2015|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release-2015\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-2016|AnyCPU'">
+    <OutputPath>bin\Release-2016\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip, Version=1.9.8.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetZip.1.9.8\lib\net20\Ionic.Zip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\net45\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\BackgroundJira.cs" />
+    <Compile Include="Data\BCF2\BcfAdapter.cs" />
+    <Compile Include="Data\BCF2\BcfContainer.cs" />
+    <Compile Include="Data\BCF2\BcfFile.cs" />
+    <Compile Include="Data\BCF2\JiraDataForBcf2.cs" />
+    <Compile Include="Data\BCF2\Markup.cs" />
+    <Compile Include="Data\BCF2\Project.cs" />
+    <Compile Include="Data\BCF2\Utils.cs" />
+    <Compile Include="Data\BCF2\Version.cs" />
+    <Compile Include="Data\BCF2\ViewComment.cs" />
+    <Compile Include="Data\BCF2\ViewPointExtended.cs" />
+    <Compile Include="Data\BCF2\Visinfo.cs" />
+    <Compile Include="Data\BCF\BCF.cs" />
+    <Compile Include="Data\DataProtector.cs" />
+    <Compile Include="Data\IndexByName.cs" />
+    <Compile Include="Data\JiraClient.cs" />
+    <Compile Include="Data\JiraUploader.cs" />
+    <Compile Include="Data\JiraUtils.cs" />
+    <Compile Include="Data\JIRA\AutoCompleteQuery.cs" />
+    <Compile Include="Data\JIRA\AutoCompleteQueryResult.cs" />
+    <Compile Include="Data\JIRA\ErrorMsg.cs" />
+    <Compile Include="Data\JIRA\Issues.cs" />
+    <Compile Include="Data\JIRA\IssueTransitions.cs" />
+    <Compile Include="Data\JIRA\Login.cs" />
+    <Compile Include="Data\BCF\markup.cs" />
+    <Compile Include="Data\JIRA\Projects.cs" />
+    <Compile Include="Data\JIRA\ProjectStatuses.cs" />
+    <Compile Include="Data\JIRA\Self.cs" />
+    <Compile Include="Data\BCF\visinfo.cs" />
+    <Compile Include="Data\EventArgs.cs" />
+    <Compile Include="Data\JIRA\Transition.cs" />
+    <Compile Include="Data\UserSettings.cs" />
+    <Compile Include="Data\RestCallback.cs" />
+    <Compile Include="Converters\AssigneeConverter.cs" />
+    <Compile Include="Converters\BoolStarConv.cs" />
+    <Compile Include="Converters\CommConverter.cs" />
+    <Compile Include="Converters\ExpanderConverter.cs" />
+    <Compile Include="Converters\IntEnabConverter2.cs" />
+    <Compile Include="Converters\IntEnabConverter.cs" />
+    <Compile Include="Converters\IntEnabConverter3.cs" />
+    <Compile Include="Converters\IntVisibConverter.cs" />
+    <Compile Include="Converters\IssueConverter.cs" />
+    <Compile Include="Converters\ListConverter.cs" />
+    <Compile Include="Converters\PathToImageConv.cs" />
+    <Compile Include="Converters\SendIssueConverter.cs" />
+    <Compile Include="Converters\StringVisibConverter.cs" />
+    <Compile Include="Converters\UriToImageConv.cs" />
+    <Compile Include="Data\IfcGuid.cs" />
+    <Compile Include="UserControls\BCFPanel.xaml.cs">
+      <DependentUpon>BCFPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CircularProgressBar.xaml.cs">
+      <DependentUpon>CircularProgressBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FilterGroup.xaml.cs">
+      <DependentUpon>FilterGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\JiraPanel.xaml.cs">
+      <DependentUpon>JiraPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Data\JIRA\Attachment.cs" />
+    <Compile Include="Data\JIRA\Author.cs" />
+    <Compile Include="Data\JIRA\AvatarUrls.cs" />
+    <Compile Include="Data\JIRA\Comment.cs" />
+    <Compile Include="Data\JIRA\Comment2.cs" />
+    <Compile Include="Data\JIRA\Component.cs" />
+    <Compile Include="Data\JIRA\Fields.cs" />
+    <Compile Include="Data\JIRA\Filter.cs" />
+    <Compile Include="Data\JIRA\Issue.cs" />
+    <Compile Include="Data\BCF\IssueBCF.cs" />
+    <Compile Include="Data\JIRA\Issuetype.cs" />
+    <Compile Include="Data\Jira.cs" />
+    <Compile Include="Data\JIRA\Owner.cs" />
+    <Compile Include="Data\JIRA\Priority.cs" />
+    <Compile Include="Data\JIRA\Project.cs" />
+    <Compile Include="Data\JIRA\RelativeDate.cs" />
+    <Compile Include="Data\JIRA\Reporter.cs" />
+    <Compile Include="Data\JIRA\Resolution.cs" />
+    <Compile Include="Data\JIRA\Status.cs" />
+    <Compile Include="Data\JIRA\StatusCategory.cs" />
+    <Compile Include="Data\JIRA\UpdateAuthor.cs" />
+    <Compile Include="Data\JIRA\User.cs" />
+    <Compile Include="UserControls\MainPanel.xaml.cs">
+      <DependentUpon>MainPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Placeholder.cs" />
+    <Compile Include="UserControls\Waiter.xaml.cs">
+      <DependentUpon>Waiter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\AddComment.xaml.cs">
+      <DependentUpon>AddComment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ChangeAssignee.xaml.cs">
+      <DependentUpon>ChangeAssignee.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ChangeValue.xaml.cs">
+      <DependentUpon>ChangeValue.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ComponentsList.xaml.cs">
+      <DependentUpon>ComponentsList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ProgressWin.xaml.cs">
+      <DependentUpon>ProgressWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\SnapWin.xaml.cs">
+      <DependentUpon>SnapWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\UploadBCF.xaml.cs">
+      <DependentUpon>UploadBCF.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Themes\CommentListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\IssueListGridView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\IssueListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\BCFPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\CircularProgressBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\FilterGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\JiraPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\MainPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Waiter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AddComment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ChangeAssignee.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ChangeValue.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ComponentsList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\ProgressWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Settings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\SnapWin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\UploadBCF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\CASEIssueTrackerIcon16x16.png" />
+    <EmbeddedResource Include="Assets\CASEIssueTrackerIcon32x32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!--<Import Project="$(SolutionDir)\.nuget\nuget.targets" />-->
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
