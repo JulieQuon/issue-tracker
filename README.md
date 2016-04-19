@@ -1,18 +1,24 @@
 # Issue Tracker
-The Issue Tracker is an advanced system to track building issues in the same way issues are tracked in the software world. 
-It has been developed internally at [CASE](http://case-inc.com) and opensourced through [WeWork](http://wework.com).
-Issue tracking means that, for instance, a designer directly from Navisworks can run a clash test, select a series of issues and exchange them with the structural engineer that will be able to open corresponding views in Revit and see the clashing elements without having to exchange any geometry file. 
-These issues are stored and viewable online on a JIRA instance, making it straightforward to manage their resolution, assign users and priority, comment etc… 
-The Issue Tracker is essentially set of clients that work directly from within authoring and analysis tools: Revit, Navisworks and a windows standalone client that consumes BCF files (therefore Solibri and Tekla BIMSight outputs too). The information is sent using the [BCF schema](https://github.com/BuildingSMART/BCF-XML), the open standard to exchange BIM information. 
-Each JIRA issue, as a matter of fact will be a building issue, and contain  decription, camera location, snapshots, list of involved elements etc...
+
+The Issue Tracker is an advanced system that tracks building issues similar to the way issues are tracked in the software world. It was developed internally at [CASE](http://case-inc.com) and open sourced through [WeWork](http://wework.com).
+
+While we hope some of our old and new friends continue to actively contribute to these apps on their own — we, as WeWork, will not be managing the GitHub community. We’ve included a description and instructions on how to access the open source code. After that, it’s up to you! 
+
+By using the issue tracker for instance, a designer working directly in Navisworks can run a clash test, select a series of issues, and exchange them with the structural engineer. The engineer can then open the corresponding views in Revit, and see the clashing elements without having to exchange any geometry file. These issues are stored and viewable online on a JIRA instance, making it straightforward to manage their resolution, assign users and priority, comment, etc. 
+
+The Issue Tracker is essentially made up of a set of clients that works directly within authoring and analysis tools such as Revit, Navisworks, Windows Standalone Client that consumes BCF files, and therefore Solibri and Tekla BIMSight outputs. 
+
+The information is sent using the [BCF schema](https://github.com/BuildingSMART/BCF-XML), the open standard to exchange BIM information. As a matter of fact, each JIRA issue will be a building issue and contain descriptions such as camera location, snapshots, list of involved elements, etc. 
 
 ![](https://github.com/WeConnect/issue-tracker/blob/master/Assets/workflow.jpg)
 
-As this system is quite advanced **we are releasing it as code-only and not providing installers**. Our hope is to form a community that will help update it to support all BCF 2 features, integrate with more authoring and analysis tools, add user friendly installers and so forth.
 
-Big ups to [Matteo Cominetti](https://github.com/teocomi) for developing it! 
+As this system is quite advanced we are releasing it as code-only and not providing installers. Our hope is that a community will form and help update the app to support all BCF 2 features, integrate with more authoring and analysis tools, add user friendly installers, and more.
 
-More info and videos on the CASE Issue Tracker: [CIT- CASE Issue Tracker 20150129.pdf](https://github.com/WeConnect/issue-tracker/raw/master/Assets/CIT-%20CASE%20Issue%20Tracker%2020150129.pdf)
+Huge thanks to [Matteo Cominetti](https://github.com/teocomi) for developing it!
+
+More info on the Issue Tracker, download this PDF file: [Issue Tracker.pdf](https://github.com/WeConnect/issue-tracker/raw/master/Assets/CIT-%20CASE%20Issue%20Tracker%2020150129.pdf)
+
 
 #Documentation
 
